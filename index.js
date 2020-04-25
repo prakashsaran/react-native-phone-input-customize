@@ -197,6 +197,7 @@ export default class PhoneInput extends Component {
         <View style={styles.customLabel}>
           <Text style={styles.customLabelText}>{'+'+this.getCountryCode()}</Text>
           <Text style={styles.customLabelText}>{'('+this.getCountryAlphaCode(iso2)+')'}</Text>
+          <Image source={require('./arrow-down.png')} style={{width:15,height:10,marginLeft:5,marginTop:6,}}/>
         </View>
         </TouchableWithoutFeedback>
         <View style={{ flex: 1, marginLeft: this.props.offset || 10 }}>
